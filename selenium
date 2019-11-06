@@ -1,0 +1,13 @@
+i mpor tor g. openqa. sel eni um. WebEl ement ; i mpor tor g. openqa. sel eni um. chr ome. Chr omeDr i v er ; i mpor tor g. openqa. sel eni um. suppor t . ui . Sel ect ; publ i ccl assHt ml { publ i cst at i cv oi dmai n( St r i ng[ ]ar gs)t hr owsI nt er r upt edExcept i on{ Sy st em. set Pr oper t y ( " webdr i v er . chr ome. dr i v er " , " C: / sel eni um/ webdr i v er / New f ol der / chr omedr i v er . exe" ) ;
+WebDr i v erdr i v er=newChr omeDr i v er ( ) ; dr i v er . get ( " f i l e: / / / C: / User s/ pc/ Deskt op/ f or m. ht ml " ) ;
+dr i v er . f i ndEl ement ( By . name( " f i r st name" ) ) . sendKey s( " Masoud" ) ; dr i v er . f i ndEl ement ( By . name( " l ast name" ) ) . sendKey s( " ghaf ar y " ) ;
+dr i v er . f i ndEl ement ( By . name( " emai l _ addr eess" ) ) . sendKey s( " masoud. ghaf ar y @y ahoo. com" ) ;
+WebEl ementmal e=dr i v er . f i ndEl ement ( By . name( " gender 1" ) ) ; mal e. cl i ck( ) ;
+WebEl ementmat hs=dr i v er . f i ndEl ement ( By . name( " mat hs" ) ) ; mat hs. cl i ck( ) ;
+WebEl ementchemi st r y=dr i v er . f i ndEl ement ( By . name( " chemi st r y " ) ) ; chemi st r y . cl i ck( ) ;
+Sel ectsel ect=newSel ect ( dr i v er . f i ndEl ement ( By . name( " sel ect " ) ) ) ; sel ect . sel ect By Vi si bl eText ( " Goa" ) ;
+dr i v er . f i ndEl ement ( By . name( " Descr i pt i on" ) ) . sendKey s( " nenkf ct azoooooawdawood
+khar chakaweawt opperdi , ddawoodani awoghay om" ) ;
+dr i v er . f i ndEl ement ( By . name( " submi t " ) ) . cl i ck( ) ;
+dr i v er . wai t ( 200) ;
+} }
